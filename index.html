@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
     <title>Portofolio | Richard Aghamenon</title>
     <!--Font-->
 </head>
@@ -26,92 +28,168 @@
 
     <section class="home" id="home">
         <div class="home-img">
-            <img src="richard-aghamenon.jpg" alt="">
+            <img src="Richard.jpg" alt="">
         </div>
 
         <div class="home-content">
-            <h1>Olá, me chamo <span>Richard Aghamenon</span></h1>
-            <h3 class="typing-text">Eu <span></span></h3>
+            <h1>Olá, me chamo<span>Richard Aghamenon</span></h1>
+            <h3 class="typing-text">Eu <span1></span1></h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed tempore aperiam quia numquam sapiente ea repudiandae neque similique quae velit obcaecati, temporibus veritatis error porro nesciunt doloribus voluptate dolores eligendi?</p>
 
             <div class="social-icon">
-                <a href="#"><i class="fa-brands fa-github"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://github.com/meliodasbr-oficial"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.instagram.com/meliodasbr_ofc/"><i class="fa-brands fa-instagram"></i></a>
             </div>
 
             <div class="home-button">
-                <button class="button">
-                    <p>Hire Me</p>
-                </button>
-                <button class="button button2">
+                <button class="button button2" onclick="window.location.href='contato.html';">
                     <p>Contato</p>
-                </button>
+                </button>                
             </div>
         </div>
     </section>
 
     <section class="serviços" id="serviços">
         <h2 class="heading">Serviços</h2>
+            <div class="service-container">
+                <div data-aos="zoom-in">
+                    <div class="single-service">
+                        <div class="content">
+                            <span class="icon">
+                                <i class="fas fa-laptop-code"></i>
+                            </span>
+                            <h3 class="title">Desenvolvedor Front-End</h3>
+                            <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores mollitia tempora rerum assumenda consequatur qui culpa exercitationem! Ullam, temporibus quasi error consequatur voluptatum fugiat, aspernatur earum eveniet magnam et ad?</p>
+                            <a href="#" class="learn-more">Learn More</a>
+                        </div>
+                        <span class="circle-before"></span>
+                    </div>
+                </div>
+                <div data-aos="zoom-in">
+                    <div class="single-service">
+                        <div class="content">
+                            <span class="icon">
+                                <i class="fa-solid fa-user-tie"></i>
+                            </span>
+                            <h3 class="title">Técnico em Administração</h3>
+                            <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores mollitia tempora rerum assumenda consequatur qui culpa exercitationem! Ullam, temporibus quasi error consequatur voluptatum fugiat, aspernatur earum eveniet magnam et ad?</p>
+                            <a href="#" class="learn-more">Learn More</a>
+                        </div>
+                        <span class="circle-before"></span>
+                    </div>
+                </div>
+            </div>
+    </section>
 
-        <div class="service-container">
-            <div class="single-service">
-                <div class="content">
-                    <span class="icon">
-                        <i class="fab fa-battle-net"></i>
-                    </span>
-                    <h3 class="title">Aghamenon Toberlock Estudos</h3>
-                    <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores mollitia tempora rerum assumenda consequatur qui culpa exercitationem! Ullam, temporibus quasi error consequatur voluptatum fugiat, aspernatur earum eveniet magnam et ad?</p>
-                    <a href="#" class="learn-more">Learn More</a>
+    <section class="habilidades" id="habilidades">
+        <h2 class="heading">Habilidades</h2>
+        <div class="container">
+            <div class="row" id="habilidadesContainer">
+                <div data-aos="flip-left">
+                    <div class="bar">
+                        <div class="info">
+                            <img src="0860612490d9d39c85fe5736ac5fb7b7.png" alt="">
+                            <span>HTML</span>
+                        </div>
+                    </div>
                 </div>
-                <span class="circle-before"></span>
-            </div>
-            <div class="single-service"></div>
-                <div class="content">
-                    <span class="icon">
-                        <i class="fab fa-battle-net"></i>
-                    </span>
-                    <h3 class="title">Aghamenon Toberlock Estudos</h3>
-                    <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores mollitia tempora rerum assumenda consequatur qui culpa exercitationem! Ullam, temporibus quasi error consequatur voluptatum fugiat, aspernatur earum eveniet magnam et ad?</p>
-                    <a href="#" class="learn-more">Learn More</a>
+                <div data-aos="flip-left">
+                    <div class="bar">
+                        <div class="info">
+                            <img src="fccd6e39db0b1c83fcb40df36d7e76c7.png" alt="">
+                            <span>CSS</span>
+                        </div>
+                    </div>
                 </div>
-                <span class="circle-before"></span>
-            </div>
-            <div class="single-service"></div>
-                <div class="content">
-                    <span class="icon">
-                        <i class="fab fa-battle-net"></i>
-                    </span>
-                    <h3 class="title">Aghamenon Toberlock Estudos</h3>
-                    <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores mollitia tempora rerum assumenda consequatur qui culpa exercitationem! Ullam, temporibus quasi error consequatur voluptatum fugiat, aspernatur earum eveniet magnam et ad?</p>
-                    <a href="#" class="learn-more">Learn More</a>
+                <div data-aos="flip-left">
+                    <div class="bar">
+                        <div class="info">
+                            <img src="778f6844d2441d444aac5e421b4355ec.png" alt="">
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
                 </div>
-                <span class="circle-before"></span>
-            </div>
-            <div class="single-service"></div>
-                <div class="content">
-                    <span class="icon">
-                        <i class="fab fa-battle-net"></i>
-                    </span>
-                    <h3 class="title">Aghamenon Toberlock Estudos</h3>
-                    <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores mollitia tempora rerum assumenda consequatur qui culpa exercitationem! Ullam, temporibus quasi error consequatur voluptatum fugiat, aspernatur earum eveniet magnam et ad?</p>
-                    <a href="#" class="learn-more">Learn More</a>
-                </div>
-                <span class="circle-before"></span>
-            </div>
-            <div class="single-service"></div>
-                <div class="content">
-                    <span class="icon">
-                        <i class="fab fa-battle-net"></i>
-                    </span>
-                    <h3 class="title">Aghamenon Toberlock Estudos</h3>
-                    <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores mollitia tempora rerum assumenda consequatur qui culpa exercitationem! Ullam, temporibus quasi error consequatur voluptatum fugiat, aspernatur earum eveniet magnam et ad?</p>
-                    <a href="#" class="learn-more">Learn More</a>
-                </div>
-                <span class="circle-before"></span>
             </div>
         </div>
     </section>
+
+    <section class="educação" id="educação">
+        <h2 class="heading">Educação</h2>
+        <div class="timeline">
+            <div data-aos="fade-left"
+                 data-aos-offset="300"
+                 data-aos-easing="ease-in-sine">
+                <div class="container right">
+                    <div class="content">
+                        <div class="tag">
+                            <h2>Escola</h2>
+                        </div>
+                        <div class="desc">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti aperiam illo repellendus molestias impedit iusto neque quo? Ratione beatae reiciendis soluta optio odio dolorem. Dignissimos incidunt veniam doloribus expedita qui!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-right"
+                 data-aos-offset="300"
+                 data-aos-easing="ease-in-sine">
+                    <div class="container left">
+                        <div class="content">
+                            <div class="tag">
+                                <h2>Escola</h2>
+                            </div>
+                            <div class="desc">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti aperiam illo repellendus molestias impedit iusto neque quo? Ratione beatae reiciendis soluta optio odio dolorem. Dignissimos incidunt veniam doloribus expedita qui!</p>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contato" id="contato">
+        <div class="container">
+            <div class="row">
+                <div class="contato-left">
+                    <h1 class="sub-title">Contato</h1>
+                    <a href="mailto:richardaghamenondemoura@gmail.com">
+                        <button class="button">
+                            <p1><i class="fa-solid fa-paper-plane"></i> Mandar um Email</p1>
+                        </button>
+                    </a>                    
+                    <p><i class="fa-solid fa-phone"></i><a href="https://wa.me/553597364963" target="_blank"></a>WhatsApp: 35 9736-4963</p>
+                    <div class="social-icon">
+                        <a href="https://github.com/meliodasbr-oficial"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/meliodasbr_ofc/"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form action="">
+                        <input type="text" name="Nome" placeholder="Seu Nome" required>
+                        <input type="email" name="Email" placeholder="Seu Email" required>
+                        <textarea name="Message" id="" rows="4" placeholder="Sua Messagem"></textarea>
+                        <button class="button">
+                            <p>Enviar</p>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="social">
+            <a href="https://github.com/meliodasbr-oficial"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.instagram.com/meliodasbr_ofc/"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <p class="copyright">
+            &copy; 2024 Richard Aghamenon. Todos os direitos reservados.
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
