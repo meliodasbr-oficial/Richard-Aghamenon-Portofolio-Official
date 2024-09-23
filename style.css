@@ -159,13 +159,7 @@ span{
 .home-content p{
     font-size: 1.7rem;
     font-weight: 400;
-    padding-top: 3px;
-}
-.home-content p2{
-    font-size: 1.7rem;
-    font-weight: 400;
-    padding-top: 12px;
-    margin-top: 12px;
+    padding-top: 5px;
 }
 
 .social-icon a{
