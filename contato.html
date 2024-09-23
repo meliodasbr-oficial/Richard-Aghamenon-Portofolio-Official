@@ -6,11 +6,23 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>Portofolio | Richard Aghamenon</title>
 </head>
 
 <body>
+    <header class="header">
+        <a href="#" class="logo">Richard Aghamenon</a>
+
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="index.html" class="active">Início</a>
+            <a href="#lista-contato">Plataformas</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
     <section class="home" id="home">
         <div class="home-img">
             <img src="Richard.jpg" alt="">
@@ -27,6 +39,57 @@
             </div>
         </div>
     </section>
+    
+    <section2 class="lista-contato" id="lista-contato">
+        <h2 class="heading">Contato</h2>
+        <div data-aos="zoom-in-up">
+            <div class="content-contato">
+                <button class="button" onclick="window.location.href='https://wa.me/553597364963';">
+                    <p>WhatsApp</p>
+                </button>
+                <button class="button" onclick="window.location.href='https://www.instagram.com/meliodasbr_ofc/';">
+                    <p>Instagram</p>
+                </button>
+                <button class="button" onclick="window.location.href='mailto:richardaghamenondemoura@gmail.com';">
+                    <p>Email</p>
+                </button>
+            </div>
+        </div>
+    </section2>
+
+    <section class="contato" id="contato">
+        <div data-aos="zoom-in-up">
+            <div class="container">
+                <div class="row">
+                    <div class="contato-left">
+                        <h1 class="sub-title">Contato</h1>
+                        <a href="mailto:richardaghamenondemoura@gmail.com">
+                            <button class="button">
+                                <p><i class="fa-solid fa-paper-plane"></i> Enviar um Email</p>
+                            </button>
+                        </a>                    
+                        <p1><i class="fa-solid fa-phone"></i> WhatsApp: 35 9736-4963</p1>
+                        <div class="social-icon">
+                            <a href="https://github.com/meliodasbr-oficial"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://www.instagram.com/meliodasbr_ofc/"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="contact-right">
+                        <form id="contact-form">
+                            <input type="text" id="name" placeholder="Seu Nome" required>
+                            <input type="email" id="email" placeholder="Seu Email" required>
+                            <textarea id="message" rows="4" placeholder="Sua Mensagem" required></textarea>
+                            <button type="submit" class="button">
+                                <p>Enviar</p>
+                            </button>
+                        </form>
+                        <div id="responseMessage" style="display: none;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer class="footer">
         <div class="social">
             <a href="https://github.com/meliodasbr-oficial"><i class="fa-brands fa-github"></i></a>
@@ -38,6 +101,7 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="messagem.js"></script>
     <script>
         AOS.init();
       </script>

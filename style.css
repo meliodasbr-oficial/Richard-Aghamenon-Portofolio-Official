@@ -228,11 +228,13 @@ button:active{
 }
 .button::before{
     left: 0;
-    transform: translateX(-10em);
+    transform: translateX(-19em);
+    width: 276px;
 }
 .button::after{
     right: 0;
-    transform: translateX(10em);
+    transform: translateX(19em);
+    width: 276px;
 }
 
 .button:hover::before{
@@ -276,7 +278,7 @@ button:active{
     position: relative;
 }
 .typing-text span1::before{
-    content: 'Software Developer';
+    content: 'Developer Web';
     color: #48b4f7;
     animation: words 20s infinite;
 }
@@ -305,7 +307,7 @@ button:active{
         content: 'sou front-end iniciante!';
     }
     41%, 60%{
-        content: 'adoro Programação!';
+        content: 'Amo Programação!';
     }
     61%, 80%{
         content: '';
@@ -338,17 +340,17 @@ button:active{
     @media (max-width:995px){
         .home{
             flex-direction: column;
-            margin: 8rem 2rem;
+            margin: 1rem 1rem;
         }
         .home .home-content h3{
-            font-size: 2.5rem;
+            font-size: 2.2rem;
         }
         .home .home-content h1{
-            font-size: 5rem;
+            font-size: 3rem;
         }
         .home .home-img img{
             width: 70vw;
-            margin-top: 4rem;
+            margin-top: 1rem;
         }
     }
 }
@@ -431,7 +433,7 @@ button:active{
 }
 .serviços .single-service .description{
     margin-bottom: 20px;
-    font-size: 14px;
+    font-size: 15px;
     transition: color .3s;
 }
 .serviços .single-service:hover .description{
@@ -545,12 +547,13 @@ button:active{
     position: absolute;
     width: 6px;
     background: rgb(90, 64, 64);
-    top: 50px;
-    bottom: 90px;
+    top: 46px;
+    bottom: 5px;
     left: 50%;
     margin-left: -3px;
     z-index: 0;
 }
+
 .educação .container {
     top: 30px;
     padding: 10px 40px;
@@ -695,7 +698,9 @@ button:active{
     font-size: 4rem;
 }
 .contato .contato-left p{
-    margin-top: 30px;
+    font-size: 16px;
+}
+.contato .contato-left p1{
     font-size: 16px;
 }
 .contato .contato-left p a{
@@ -706,9 +711,7 @@ button:active{
     margin-right: 15px;
     font-size: 25px;
 }
-.button p1{
-    z-index: 1;
-}
+
 .contato .contato-right form{
     width: 100%;
 }
@@ -746,11 +749,13 @@ form input, textarea{
     width: 100%;
     padding: 40px 0;
     background: var(--main-color);
+    font-weight: 900;
 }
 .footer .social{
     text-align: center;
-    padding-bottom: 25px;
+    padding-bottom: 0px;
     color: #000000;
+    font-weight: 900;
 }
 .footer .social a{
     font-size: 25px;
@@ -794,7 +799,7 @@ footer .copyright{
         padding: 2rem 3%;
     }
     section{
-        padding: 5rem 3% 2rem;
+        padding: 2rem 3% 2rem;
     }
     .serviços{
         padding-bottom: 7rem;
@@ -802,4 +807,241 @@ footer .copyright{
     .footer{
         padding: 2rem 3%;
     }
+}
+
+/*Projetos*/
+
+/*Serviços*/
+.projetos{
+    background: var(--second-bg-color);
+    margin-top: 50px;
+}
+.heading{
+    text-align: center;
+    font-size: 5rem;
+}
+.projetos-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+.projetos .single-projetos{
+    position: relative;
+    margin-top: 30px;
+    background-color: var(--bg-color);
+    border-radius: 10px;
+    padding: 40px 30px;
+    overflow: hidden;
+}
+.projetos .single-projetos .content{
+    position: relative;
+    z-index: 20;
+}
+
+.projetos .single-projetos .circle-before{
+    position: absolute;
+    top: 0;
+    right: 0px;
+    transform: translate(40%, -40%);
+    width: 150px;
+    height: 150px;
+    background-color: var(--main-color);
+    border: 6px solid #504f93;
+    border-radius: 50%;
+    opacity: 0.5;
+    z-index: 10;
+    transition: all .6s;
+}
+.projetos .single-projetos:hover .circle-before{
+    width: 100%;
+    height: 100%;
+    transform: none;
+    border: 0;
+    border-radius: 0;
+    opacity: 1;
+}
+.projetos .single-projetos .icon{
+    display: inline-block;
+    margin-bottom: 26px;
+    height: 70px;
+    width: 70px;
+    background-color: var(--main-color);
+    border-radius: 5px;
+    line-height: 70px;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    transition: all .3s;
+}
+.projetos .single-projetos:hover .icon{
+    background-color: var(--second-bg-color);
+    color: var(--main-color);
+}
+.projetos .single-projetos .title{
+    margin-bottom: 18px;
+    font-weight: 700;
+    font-size: 23px;
+    transition: color .3s;
+}
+.projetos .single-projetos:hover .title{
+    color: #000000;
+}
+.projetos .single-projetos .description{
+    margin-bottom: 20px;
+    font-size: 15px;
+    transition: color .3s;
+}
+.projetos .single-projetos:hover .description{
+    color: #000000;
+}
+
+.projetos .single-projetos a{
+    position: relative;
+    font-size: 18px;
+    color: var(--main-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color .3s;
+}
+.projetos .single-projetos:hover a{
+    color: #000000;
+}
+@media (max-width: 1285px) {
+    .projetos-container {
+        padding-bottom: 7rem;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0 5rem;
+    }
+}
+@media (max-width:991px){
+    section{
+        padding: 8rem 3% 2rem;
+    }
+    .projetos{
+        padding-bottom: 7rem;
+    }
+}
+@media (max-width:895px) {
+    .projetos .projetos-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+section2{
+    height: 55vh;
+    display: list-item;
+    text-align: -webkit-center;
+}
+
+.lista-contato button{
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.content-contato{
+    background: var(--container-cor);
+    color: var(--text-color);
+    border-radius: 4rem;
+    padding: 3rem;
+    width: 70%;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+.contato button{
+    margin: 35px 0px;
+}
+
+/* Estilos gerais */
+
+.informação{
+    background: var(--second-bg-color);
+}
+.informação  h3{
+    font-size: 26px;
+    text-align: center;
+}
+.informação  p{
+    font-size: 17px;
+    text-align: justify;
+}
+  .heading {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .single-info {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px var(--main-color);
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .description {
+    line-height: 1.7;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #ffffff;
+  }
+  
+  /* Subheading */
+  .subheading {
+    font-size: 22px;
+    margin: 20px 0;
+    color: #0084ff;
+  }
+  
+  /* Separando os recursos */
+  .features {
+    margin-top: 20px;
+  }
+  
+  .feature-item {
+    margin-bottom: 20px;
+  }
+  
+  .feature-item h5 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: var(--text-color);
+  }
+  
+  .feature-item p {
+    margin-left: 15px;
+    color: var(--text-color);
+    font-size: 16.5px;
+  }
+  
+  /* Efeitos de destaque */
+  .feature-item h5 b {
+    color: #71cdf7;
+    font-size: 16px;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .description, .feature-item p {
+      font-size: 16px;
+    }
+  
+    .heading {
+      font-size: 24px;
+    }
+  
+    .subheading {
+      font-size: 18px;
+    }
+  
+    .feature-item h5 {
+      font-size: 16px;
+    }
+    .informação  p{
+        font-size: 14px;
+        text-align: justify;
+    }
+  }
+section3{
+    height: 100vh;
 }

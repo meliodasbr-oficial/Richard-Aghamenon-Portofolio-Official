@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style2.css">
     <title>Portofolio | Richard Aghamenon</title>
@@ -22,6 +23,7 @@
             <a href="#serviços">Serviços</a>
             <a href="#habilidades">Habilidades</a>
             <a href="#educação">Educação</a>
+            <a href="#projetos">Projetos</a>
             <a href="#contato">Contato</a>
         </nav>
     </header>
@@ -59,8 +61,7 @@
                                 <i class="fas fa-laptop-code"></i>
                             </span>
                             <h3 class="title">Desenvolvedor Front-End</h3>
-                            <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores mollitia tempora rerum assumenda consequatur qui culpa exercitationem! Ullam, temporibus quasi error consequatur voluptatum fugiat, aspernatur earum eveniet magnam et ad?</p>
-                            <a href="#" class="learn-more">Learn More</a>
+                            <p class="description">Sou um desenvolvedor front-end iniciante, apaixonado por criar interfaces interativas. Estou aprendendo HTML, CSS e JavaScript, e busco sempre me atualizar nas tendências do desenvolvimento web. Meu objetivo é construir soluções funcionais e agradáveis, e estou empolgado para mostrar meu trabalho e colaborar em novos projetos!</p>
                         </div>
                         <span class="circle-before"></span>
                     </div>
@@ -72,8 +73,7 @@
                                 <i class="fa-solid fa-user-tie"></i>
                             </span>
                             <h3 class="title">Técnico em Administração</h3>
-                            <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores mollitia tempora rerum assumenda consequatur qui culpa exercitationem! Ullam, temporibus quasi error consequatur voluptatum fugiat, aspernatur earum eveniet magnam et ad?</p>
-                            <a href="#" class="learn-more">Learn More</a>
+                            <p class="description">Atualmente, estou cursando Técnico em Administração, complementando minha formação em programação e desenvolvimento web, proporcionando uma visão mais ampla de gestão e finanças. Acredito que essa combinação de habilidades me tornará um profissional mais completo, capaz de desenvolver soluções eficazes.</p>
                         </div>
                         <span class="circle-before"></span>
                     </div>
@@ -114,80 +114,146 @@
     </section>
 
     <section class="educação" id="educação">
-        <h2 class="heading">Educação</h2>
+        <h2 class="heading">
+            Educação
+        </h2>
         <div class="timeline">
-            <div data-aos="fade-left"
-                 data-aos-offset="300"
-                 data-aos-easing="ease-in-sine">
-                <div class="container right">
+            <div data-aos="zoom-in-up">
+                <div class="container left">
                     <div class="content">
                         <div class="tag">
-                            <h2>Escola</h2>
-                        </div>
-                        <div class="desc">
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti aperiam illo repellendus molestias impedit iusto neque quo? Ratione beatae reiciendis soluta optio odio dolorem. Dignissimos incidunt veniam doloribus expedita qui!</p>
+                            <h2>Ensino Médio</h2>
+                            <div class="desc">
+                                <p>Escola Estadual Professo Souza</p>
+                                <p>2023 - 2026</p>
+                                <p></p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div data-aos="fade-right"
-                 data-aos-offset="300"
-                 data-aos-easing="ease-in-sine">
+                <div data-aos="zoom-in-up">
+                    <div class="container right">
+                        <div class="content">
+                            <div class="tag">
+                                <h2>Técnico em Administração</h2>
+                            </div>
+                            <div class="desc">
+                                <p>Escola Estadual Professo Souza</p>
+                                <p>2024 - 2025</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="zoom-in-up">
                     <div class="container left">
                         <div class="content">
                             <div class="tag">
-                                <h2>Escola</h2>
-                            </div>
-                            <div class="desc">
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti aperiam illo repellendus molestias impedit iusto neque quo? Ratione beatae reiciendis soluta optio odio dolorem. Dignissimos incidunt veniam doloribus expedita qui!</p>
+                                <h2>Programação Online</h2>
+                                <div class="desc">
+                                    <p></p>
+                                    <p>2023 - 2024</p>
+                                    <p></p>
+                                </div>
                             </div>
                         </div>
                     </div>
+                </div>
+                <div data-aos="zoom-in-up">
+                    <div class="container right">
+                        <div class="content">
+                            <div class="tag">
+                                <h2>Programação Online</h2>
+                                <div class="desc">
+                                    <p></p>
+                                    <p>2023 - 2024</p>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
+    </section>
+
+    <section class="projetos" id="projetos">
+        <h2 class="heading">Projetos</h2>
+            <div class="projetos-container">
+                <div data-aos="zoom-in">
+                    <div class="single-projetos">
+                        <div class="content">
+                            <span class="icon">
+                                <i class="fa-regular fa-window-maximize"></i>
+                            </span>
+                            <h3 class="title">Aghamenon Toberlock</h3>
+                            <h3 class="title">21/05/2024</h3>
+                            <p class="description">O Aghamenon Toberlock Estudos é uma plataforma criada por mim, visando transformar a experiência de estudo e preparação para exames, por meio de simulados interativos, relatórios detalhados e ferramentas motivacionais, utilizando tecnologias modernas como HTML, CSS, JavaScript e Firebase.</p>
+                            <a href="Aghamenon-Toberlock-Estudos.html" class="learn-more">Saber Mais</a>
+                        </div>
+                        <span class="circle-before"></span>
+                    </div>
+                </div>
+                <div data-aos="zoom-in">
+                    <div class="single-projetos">
+                        <div class="content">
+                            <span class="icon">
+                                <i class="fa-regular fa-window-maximize"></i>
+                            </span>
+                            <h3 class="title">Calculadora de Faltas</h3>
+                            <h3 class="title">11/07/2024</h3>
+                            <p class="description">A Calculadora de Faltas, criada por mim, permite calcular e acompanhar o total de ausências com precisão, exibindo os resultados de forma clara, como "Total de Faltas: 00:50:00 = 1". Além disso, ela oferece a opção de zerar as faltas e limpar as cargas horárias com facilidade, auxiliando na organização acadêmica.</p>
+                            <a href="Calculadora-de-Faltas.html" class="learn-more">Saber Mais</a>
+                        </div>
+                        <span class="circle-before"></span>
+                    </div>
+                </div>
+            </div>
     </section>
 
     <section class="contato" id="contato">
-        <div class="container">
-            <div class="row">
-                <div class="contato-left">
-                    <h1 class="sub-title">Contato</h1>
-                    <a href="mailto:richardaghamenondemoura@gmail.com">
-                        <button class="button">
-                            <p1><i class="fa-solid fa-paper-plane"></i> Mandar um Email</p1>
-                        </button>
-                    </a>                    
-                    <p><i class="fa-solid fa-phone"></i><a href="https://wa.me/553597364963" target="_blank"></a>WhatsApp: 35 9736-4963</p>
-                    <div class="social-icon">
-                        <a href="https://github.com/meliodasbr-oficial"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://www.instagram.com/meliodasbr_ofc/"><i class="fa-brands fa-instagram"></i></a>
+        <div data-aos="zoom-in-up">
+            <div class="container">
+                <div class="row">
+                    <div class="contato-left">
+                        <h1 class="sub-title">Contato</h1>
+                        <a href="mailto:richardaghamenondemoura@gmail.com">
+                            <button class="button">
+                                <p><i class="fa-solid fa-paper-plane"></i> Enviar um Email</p>
+                            </button>
+                        </a>                    
+                        <p1><i class="fa-solid fa-phone"></i> WhatsApp: 35 9736-4963</p1>
+                        <div class="social-icon">
+                            <a href="https://github.com/meliodasbr-oficial"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://www.instagram.com/meliodasbr_ofc/"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
                     </div>
-                </div>
-                <div class="contact-right">
-                    <form action="">
-                        <input type="text" name="Nome" placeholder="Seu Nome" required>
-                        <input type="email" name="Email" placeholder="Seu Email" required>
-                        <textarea name="Message" id="" rows="4" placeholder="Sua Messagem"></textarea>
-                        <button class="button">
-                            <p>Enviar</p>
-                        </button>
-                    </form>
+                    <div class="contact-right">
+                        <form id="contact-form">
+                            <input type="text" id="name" placeholder="Seu Nome" required>
+                            <input type="email" id="email" placeholder="Seu Email" required>
+                            <textarea id="message" rows="4" placeholder="Sua Mensagem" required></textarea>
+                            <button type="submit" class="button">
+                                <p>Enviar</p>
+                            </button>
+                        </form>
+                        <div id="responseMessage" style="display: none;"></div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-
     <footer class="footer">
-        <div class="social">
-            <a href="https://github.com/meliodasbr-oficial"><i class="fa-brands fa-github"></i></a>
-            <a href="https://www.instagram.com/meliodasbr_ofc/"><i class="fa-brands fa-instagram"></i></a>
+        <div data-aos="zoom-in">
+            <div class="social">
+                <a href="https://github.com/meliodasbr-oficial"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.instagram.com/meliodasbr_ofc/"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <p class="copyright">
+                &copy; 2024 Richard Aghamenon. Todos os direitos reservados.
+            </p>
         </div>
-        <p class="copyright">
-            &copy; 2024 Richard Aghamenon. Todos os direitos reservados.
-        </p>
     </footer>
-
     <script src="script.js"></script>
+    <script src="messagem.js"></script>
     <script>
         AOS.init();
       </script>
