@@ -116,7 +116,7 @@ html::-webkit-scrollbar-thumb{
 
 section{
     min-height: 100vh;
-    padding: 5rem 9% 5rem;
+    padding: 20rem 9% 5rem;
 }
 .home{
     display: flex;
